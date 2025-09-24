@@ -6,11 +6,22 @@ This project uses a DJI Tello drone and YOLOv8 to detect palm tree diseases (Hea
 - Real-time detection with DJI Tello drone
 - Visualization of detection results
 ## Project Structure
-- `train_yolo.py` → Train YOLO model
-- `detect_yolo.py` → Test detection on images
-- `tello_yolo.py` → Real-time detection with Tello drone
-- `palm_disease.yaml` → Dataset config file
-- ## How to Run?
-```bash
-pip install -r requirements.txt
-python tello_yolo.py
+AI-Drone-TreeDiseaseDetection/
+├── train_yolo.py # Training YOLO model
+├── detect_yolo.py # Testing detection on images
+├── tello_yolo.py # Real-time detection with DJI Tello drone
+├── configs/
+│ └── palm_disease.yaml
+├── requirements.txt
+└── README.md
+
+---
+
+### `requirements.txt`
+```txt
+ultralytics
+torch
+opencv-python
+djitellopy
+matplotlib
+pyyaml
